@@ -1,3 +1,16 @@
 [gd_scene format=3 uid="uid://cdu6f6ygwip6i"]
 
+[ext_resource type="Texture2D" uid="uid://bvlnq2ua0wkjw" path="res://VERT_soggycat.png" id="1_jdt0v"]
+[ext_resource type="Script" uid="uid://cacy75duv0t8j" path="res://sogript.gd" id="1_kk7pb"]
+
 [node name="Node2D" type="Node2D" unique_id=58086995]
+script = ExtResource("1_kk7pb")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1025845792]
+position = Vector2(98, 82)
+scale = Vector2(0.079, 0.07999994)
+texture = ExtResource("1_jdt0v")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=2078549409]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=2105054351]
